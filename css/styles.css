@@ -411,14 +411,17 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.container-footer {
+.container-all-footer {
   display: flex;
-  flex-direction: column;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
 }
 .adres {
   font-style: normal;
@@ -436,4 +439,54 @@ img {
   border-bottom: 1px solid var(--border-header-color);
 }
 .footer-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--button-text-color);
+}
+
+.icon-list {
+  display: flex;
+}
+.link-icon {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.one {
+  background-image: url(../images/link1.svg);
+}
+.two {
+  background-image: url(../images/link2.svg);
+}
+.three {
+  background-image: url(../images/link3.svg);
+}
+.four {
+  background-image: url(../images/link4.svg);
+}
+.one:hover {
+  background-color: #2196f3;
+}
+.two:hover {
+  background-color: #2196f3;
+}
+.three:hover {
+  background-color: #2196f3;
+}
+.four:hover {
+  background-color: #2196f3;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
 }

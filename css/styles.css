@@ -50,6 +50,11 @@ a {
 .auth-nav .item + .item {
   margin-left: 50px;
 }
+.auth-nav1 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 .auth-nav .auth-nav1 {
   color: var(--text-color);
   font-weight: 500;
@@ -418,6 +423,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  align-items: baseline;
 }
 .container-footer {
   display: flex;
@@ -489,4 +495,8 @@ img {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
+}
+
+.icon-envelope-hover {
+  width: 16px;
 }

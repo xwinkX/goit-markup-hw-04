@@ -67,14 +67,16 @@ a {
   color: var(--accent-color);
 }
 .container {
-  display: flex;
-  align-items: center;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+}
+.container-header {
+  display: flex;
+  align-items: center;
 }
 .container-hero {
   display: flex;
@@ -282,6 +284,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.classes {
+  padding-top: 0;
 }
 .work-one {
   color: var(--primary-text-color);

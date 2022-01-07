@@ -127,7 +127,6 @@ a {
 .icon-advantage {
   width: 70px;
   height: 70px;
-  margin: 25px auto;
 }
 .bacground-advantage {
   background-color: #f5f4fa;
@@ -135,6 +134,9 @@ a {
   height: 120px;
   margin-bottom: 30px;
   display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 .site-nav {
   display: flex;
@@ -217,6 +219,35 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.work-icon {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+}
+.icon-command {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.work-icon-title:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-command-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-color);
+}
+.icon-command:hover,
+.icon-command:focus {
+  background-color: var(--button-header-color);
+}
+.icon-command:hover .icon-command-svg,
+.icon-command:focus .icon-command-svg {
+  fill: var(--beckground-color);
+}
 .participant {
   background: var(--button-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -225,6 +256,7 @@ a {
 }
 
 .participant-title {
+  width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -270,6 +302,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 .classes {
   padding-top: 0;
@@ -280,6 +313,7 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 .title-one {
   color: var(--primary-text-color);
@@ -312,6 +346,39 @@ img {
 
 .title-portfolio {
   display: none;
+}
+.client {
+  margin-bottom: 50px;
+}
+.section-client {
+  display: flex;
+  justify-content: center;
+}
+.section-client-titl {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-client-list:not(:last-child) {
+  margin-right: 30px;
+}
+.section-client-svg {
+  width: 106px;
+  height: 60px;
+  fill: var(--text-color);
+}
+.section-client-titl:hover,
+.section-client-titl:focus {
+  border-color: var(--button-header-color);
+}
+.section-client-titl:hover .section-client-svg,
+.section-client-titl:focus .section-client-svg {
+  fill: var(--button-header-color);
 }
 
 .button-filter {

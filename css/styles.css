@@ -162,9 +162,15 @@ a {
 
 .hero {
   background-color: var(--hero-color);
-
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   color: var(--beckground-color);
@@ -398,6 +404,8 @@ img {
 .button-filter:focus {
   color: var(--button-text-color);
   background-color: var(--button-header-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter {
@@ -409,6 +417,11 @@ img {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+.filter-element:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .filter-element:nth-child(3n) {
@@ -439,9 +452,6 @@ img {
 
 .filter-box {
   padding: 20px 24px;
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
 }
 
 .footer {
@@ -452,6 +462,29 @@ img {
 .container-footer {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
+}
+.footer-item {
+  display: flex;
+  align-items: baseline;
+}
+.footer-icon {
+  justify-content: flex-start;
+}
+.hover-command {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.hover-command-svg {
+  fill: var(--button-text-color);
+}
+.hover-article {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--button-text-color);
 }
 .adres {
   font-style: normal;

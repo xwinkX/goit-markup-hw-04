@@ -14,6 +14,7 @@
   --filter-item-color: #757575;
   --border-color: #eeeeee;
   --border-header-color: #ececec;
+  --icon-color: rgba(175, 177, 184, 1);
 }
 html {
   box-sizing: border-box;
@@ -50,6 +51,7 @@ a {
 .auth-nav .item + .item {
   margin-left: 50px;
 }
+
 .auth-nav .auth-nav1 {
   color: var(--text-color);
   font-weight: 500;
@@ -123,6 +125,7 @@ a {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--text-color);
 }
 .icon-advantage {
   width: 70px;
@@ -244,7 +247,7 @@ a {
 .icon-command-svg {
   width: 20px;
   height: 20px;
-  fill: var(--text-color);
+  fill: var(--icon-color);
 }
 .icon-command:hover,
 .icon-command:focus {
@@ -376,7 +379,7 @@ img {
 .section-client-svg {
   width: 106px;
   height: 60px;
-  fill: var(--text-color);
+  fill: var(--icon-color);
 }
 .section-client-titl:hover,
 .section-client-titl:focus {
@@ -419,7 +422,8 @@ img {
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
-.filter-element:hover {
+.filter-element-hover:hover {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }

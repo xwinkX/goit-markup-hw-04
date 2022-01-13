@@ -61,11 +61,21 @@ a {
   display: flex;
   align-items: center;
 }
-.auth-nav .auth-nav1:hover,
-.auth-nav .auth-nav1:focus {
+/*.item:hover .auth-nav1,
+.item:hover .hover-icon {
+  fill: var(--accent-color);
   color: var(--accent-color);
+}
+*/
+.auth-nav1:hover,
+.auth-nav1:focus {
+  color: var(--accent-color);
+}
+.auth-nav1:hover .hover-icon,
+.auth-nav1:focus .hover-icon {
   fill: var(--accent-color);
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -127,6 +137,7 @@ a {
   margin-right: 10px;
   fill: var(--text-color);
 }
+
 .icon-advantage {
   width: 70px;
   height: 70px;

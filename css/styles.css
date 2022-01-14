@@ -61,12 +61,7 @@ a {
   display: flex;
   align-items: center;
 }
-/*.item:hover .auth-nav1,
-.item:hover .hover-icon {
-  fill: var(--accent-color);
-  color: var(--accent-color);
-}
-*/
+
 .auth-nav1:hover,
 .auth-nav1:focus {
   color: var(--accent-color);
@@ -132,12 +127,15 @@ a {
 }
 
 .hover-icon {
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: var(--text-color);
 }
-
+.hover-icon-one {
+  width: 16px;
+  height: 12px;
+}
 .icon-advantage {
   width: 70px;
   height: 70px;
